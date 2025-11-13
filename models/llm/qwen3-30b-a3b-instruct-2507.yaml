@@ -1,0 +1,94 @@
+model: Qwen3-30B-A3B-Instruct-2507
+label:
+  zh_Hans: Qwen3-30B-A3B-Instruct-2507
+  en_US: Qwen3-30B-A3B-Instruct-2507
+model_type: llm
+features:
+- multi-tool-call
+- stream-tool-call
+- tool-call
+model_properties:
+  mode: chat
+  context_size: 262144
+parameter_rules:
+- name: max_tokens
+  use_template: max_tokens
+  type: int
+- name: temperature
+  use_template: temperature
+  type: float
+  min: 0.0
+  max: 2.0
+- name: top_p
+  use_template: top_p
+  type: float
+  min: 0.0
+  max: 1.0
+- name: top_k
+  use_template: top_k
+  type: int
+- name: presence_penalty
+  use_template: presence_penalty
+  type: float
+  min: -2.0
+  max: 2.0
+- name: stream
+  label:
+    en_US: Stream
+    zh_Hans: 流式输出
+  type: boolean
+  default: false
+  required: false
+  help:
+    en_US: Whether to stream the response. If true, the response will be streamed
+      back as it is generated.
+    zh_Hans: 是否流式返回响应。如果为 true，响应将在生成时流式返回。
+- name: stream_options
+  label:
+    en_US: Stream Options
+    zh_Hans: 流式选项
+  type: text
+  required: false
+  default: '{"include_usage": true}'
+  help:
+    en_US: 'If provided, this will override the above settings. Example: {"include_usage":
+      true}'
+    zh_Hans: '如果提供，将覆盖上述设置。示例：{"include_usage": true}'
+- name: modalities
+  label:
+    en_US: Modalities
+    zh_Hans: 模态
+  type: string
+  required: false
+  options:
+  - text
+  help:
+    en_US: The type of output the model should generate. Most models can generate
+      text, text is the default type
+    zh_Hans: 希望模型生成的输出类型。大多数模型都可以生成文本，文本是默认类型
+- name: response_format
+  use_template: response_format
+  type: string
+  options:
+  - text
+  - json_object
+- name: extra_body
+  label:
+    en_US: Extra Body
+    zh_Hans: 额外请求体
+  type: text
+  required: false
+  default: '{"provider": {"only": [], "order": [], "sort": ["throughput"], "input_price_range":
+    [], "output_price_range": [], "throughput_range": [], "latency_range": [], "input_length_range":
+    [], "allow_filter_prompt_length": true, "ignore": [], "allow_fallbacks": true},
+    "enable_thinking": true}'
+  help:
+    en_US: 'Routing and policy control etc. extended fields. If provided, this will
+      override the above settings. Example: {"provider": {"only": [], "order": [],
+      "sort": ["throughput"], "input_price_range": [], "output_price_range": [], "throughput_range":
+      [], "latency_range": [], "input_length_range": [], "allow_filter_prompt_length":
+      true, "ignore": [], "allow_fallbacks": true}, "enable_thinking": true}'
+    zh_Hans: '路由与策略控制等扩展字段。如果提供，将覆盖上述设置。示例：{"provider": {"only": [], "order": [],
+      "sort": ["throughput"], "input_price_range": [], "output_price_range": [], "throughput_range":
+      [], "latency_range": [], "input_length_range": [], "allow_filter_prompt_length":
+      true, "ignore": [], "allow_fallbacks": true}, "enable_thinking": true}'

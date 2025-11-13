@@ -1,62 +1,52 @@
-identity:
-  author: "aiping"
-  name: "aiping"
-  label:
-    en_US: "aiping"
-    zh_Hans: "aiping"
-    pt_BR: "aiping"
-    ja_JP: "aiping"
-  description:
-    en_US: "AIPing official plugin"
-    zh_Hans: "AIPing official plugin"
-    pt_BR: "AIPing official plugin"
-    ja_JP: "AIPing official plugin"
-  icon: "icon.svg"
-
-#########################################################################################
-# If you want to support OAuth, you can uncomment the following code.
-#########################################################################################
-# oauth_schema:
-#   client_schema:
-#     - name: "client_id"
-#       type: "secret-input"
-#       required: true
-#       url: https://example.com/oauth/authorize
-#       placeholder:
-#         en_US: "Please input your Client ID"
-#         zh_Hans: "请输入你的 Client ID"
-#         pt_BR: "Insira seu Client ID"
-#       help:
-#         en_US: "Client ID is used to authenticate requests to the example.com API."
-#         zh_Hans: "Client ID 用于认证请求到 example.com API。"
-#         pt_BR: "Client ID é usado para autenticar solicitações à API do example.com."
-#       label:
-#         zh_Hans: "Client ID"
-#         en_US: "Client ID"
-#     - name: "client_secret"
-#       type: "secret-input"
-#       required: true
-#       url: https://example.com/oauth/authorize
-#       placeholder:
-#         en_US: "Please input your Client Secret"
-#         zh_Hans: "请输入你的 Client Secret"
-#         pt_BR: "Insira seu Client Secret"
-#       help:
-#         en_US: "Client Secret is used to authenticate requests to the example.com API."
-#         zh_Hans: "Client Secret 用于认证请求到 example.com API。"
-#         pt_BR: "Client Secret é usado para autenticar solicitações à API do example.com."
-#       label:
-#         zh_Hans: "Client Secret"
-#         en_US: "Client Secret"
-#   credentials_schema:
-#     - name: "access_token"
-#       type: "secret-input"
-#       label:
-#         zh_Hans: "Access Token"
-#         en_US: "Access Token"
-
-tools:
-  - tools/aiping.yaml
+provider: aiping
+label:
+  en_US: AIPing
+  zh_Hans: AIPing
+description:
+  en_US: Official AIPing Dify plugin.
+  zh_Hans: 官方 AIPing Dify 插件。
+icon_large:
+  en_US: icon.svg
+icon_small:
+  en_US: icon.svg
+background: '#c0cdff'
+supported_model_types:
+- llm
+configurate_methods:
+- predefined-model
+models:
+  llm:
+    position: models/llm/_position.yaml
+    predefined:
+    - models/llm/*.yaml
+provider_credential_schema:
+  credential_form_schemas:
+  - label:
+      en_US: API Key
+    placeholder:
+      en_US: Enter your API Key
+      zh_Hans: 在此输入您的 API Key
+    required: true
+    type: secret-input
+    variable: api_key
+  - label:
+      en_US: Custom API endpoint URL
+      zh_Hans: 自定义 API endpoint 地址
+    placeholder:
+      en_US: Base URL, e.g. https://aiping.cn/api/v1
+      zh_Hans: Base URL, e.g. https://aiping.cn/api/v1
+    required: false
+    type: text-input
+    default: https://aiping.cn/api/v1
+    variable: endpoint_url
+help:
+  title:
+    en_US: Get your API Key from AIPing
+    zh_Hans: 从 AIPing 获取 API Key
+  url:
+    en_US: https://aiping.cn/docs/api-docs
 extra:
   python:
-    source: provider/aiping.py
+    model_sources:
+    - models/llm/llm.py
+    provider_source: provider/aiping.py

@@ -1,53 +1,29 @@
-from typing import Any
+import logging
+from dify_plugin.entities.model import ModelType
+from dify_plugin.errors.model import CredentialsValidateFailedError
+from dify_plugin import ModelProvider
 
-from dify_plugin import ToolProvider
-from dify_plugin.errors.tool import ToolProviderCredentialValidationError
+logger = logging.getLogger(__name__)
 
 
-class AipingProvider(ToolProvider):
-    
-    def _validate_credentials(self, credentials: dict[str, Any]) -> None:
+class AipingProvider(ModelProvider):
+    def validate_provider_credentials(self, credentials: dict) -> None:
+        """
+        Validate provider credentials
+
+        if validate failed, raise exception
+
+        :param credentials: provider credentials, credentials form defined in `provider_credential_schema`.
+        """
         try:
-            """
-            IMPLEMENT YOUR VALIDATION HERE
-            """
-        except Exception as e:
-            raise ToolProviderCredentialValidationError(str(e))
-
-    #########################################################################################
-    # If OAuth is supported, uncomment the following functions.
-    # Warning: please make sure that the sdk version is 0.4.2 or higher.
-    #########################################################################################
-    # def _oauth_get_authorization_url(self, redirect_uri: str, system_credentials: Mapping[str, Any]) -> str:
-    #     """
-    #     Generate the authorization URL for aiping OAuth.
-    #     """
-    #     try:
-    #         """
-    #         IMPLEMENT YOUR AUTHORIZATION URL GENERATION HERE
-    #         """
-    #     except Exception as e:
-    #         raise ToolProviderOAuthError(str(e))
-    #     return ""
-        
-    # def _oauth_get_credentials(
-    #     self, redirect_uri: str, system_credentials: Mapping[str, Any], request: Request
-    # ) -> Mapping[str, Any]:
-    #     """
-    #     Exchange code for access_token.
-    #     """
-    #     try:
-    #         """
-    #         IMPLEMENT YOUR CREDENTIALS EXCHANGE HERE
-    #         """
-    #     except Exception as e:
-    #         raise ToolProviderOAuthError(str(e))
-    #     return dict()
-
-    # def _oauth_refresh_credentials(
-    #     self, redirect_uri: str, system_credentials: Mapping[str, Any], credentials: Mapping[str, Any]
-    # ) -> OAuthCredentials:
-    #     """
-    #     Refresh the credentials
-    #     """
-    #     return OAuthCredentials(credentials=credentials, expires_at=-1)
+            model_instance = self.get_model_instance(ModelType.LLM)
+            model_instance.validate_credentials(
+                model="DeepSeek-V3", credentials=credentials
+            )
+        except CredentialsValidateFailedError as ex:
+            raise ex
+        except Exception as ex:
+            logger.exception(
+                f"{self.get_provider_schema().provider} credentials validate failed"
+            )
+            raise ex

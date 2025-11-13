@@ -3,10 +3,10 @@ type: plugin
 author: aiping
 name: aiping
 label:
-  en_US: aiping
-  ja_JP: aiping
-  zh_Hans: aiping
-  pt_BR: aiping
+  en_US: AIPing
+  ja_JP: AIPing
+  zh_Hans: AIPing
+  pt_BR: AIPing
 description:
   en_US: AIPing official plugin
   ja_JP: AIPing official plugin
@@ -35,7 +35,7 @@ resource:
       enabled: true
       size: 1048576
 plugins:
-  tools:
+  models:
     - provider/aiping.yaml
 meta:
   version: 0.0.1
