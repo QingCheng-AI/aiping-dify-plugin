@@ -1,0 +1,7 @@
+model: bge-reranker-v2-m3
+label:
+  en_US: bge-reranker-v2-m3
+  zh_Hans: bge-reranker-v2-m3
+model_type: rerank
+model_properties:
+  context_size: 8192

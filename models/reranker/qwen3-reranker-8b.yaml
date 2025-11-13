@@ -1,0 +1,7 @@
+model: Qwen3-Reranker-8B
+label:
+  en_US: Qwen3-Reranker-8B
+  zh_Hans: Qwen3-Reranker-8B
+model_type: rerank
+model_properties:
+  context_size: 32768

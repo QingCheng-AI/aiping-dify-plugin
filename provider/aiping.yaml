@@ -12,13 +12,20 @@ icon_small:
 background: '#c0cdff'
 supported_model_types:
 - llm
+- text-embedding
+- rerank
 configurate_methods:
 - predefined-model
 models:
   llm:
-    position: models/llm/_position.yaml
     predefined:
     - models/llm/*.yaml
+  text_embedding:
+    predefined:
+    - models/embedding/*.yaml
+  rerank:
+    predefined:
+    - models/reranker/*.yaml
 provider_credential_schema:
   credential_form_schemas:
   - label:
@@ -49,4 +56,6 @@ extra:
   python:
     model_sources:
     - models/llm/llm.py
+    - models/embedding/embedding.py
+    - models/reranker/reranker.py
     provider_source: provider/aiping.py

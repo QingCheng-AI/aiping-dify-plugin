@@ -89,5 +89,7 @@ class AipingLargeLanguageModel(OAICompatLargeLanguageModel):
         Args:
             credentials: 认证信息字典
         """
-        credentials["endpoint_url"] = str(URL(credentials.get("endpoint_url", "https://aiping.cn/api/v1")))
+        credentials["endpoint_url"] = str(
+            URL(credentials.get("endpoint_url", "https://aiping.cn/api/v1"))
+        )
         credentials["mode"] = LLMMode.CHAT.value

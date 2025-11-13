@@ -16,6 +16,7 @@ class AipingProvider(ModelProvider):
         :param credentials: provider credentials, credentials form defined in `provider_credential_schema`.
         """
         try:
+            # 验证 LLM 模型（主要验证方式）
             model_instance = self.get_model_instance(ModelType.LLM)
             model_instance.validate_credentials(
                 model="DeepSeek-V3", credentials=credentials
