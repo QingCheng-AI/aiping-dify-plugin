@@ -3,8 +3,8 @@ label:
   en_US: AIPing
   zh_Hans: AIPing
 description:
-  en_US: Official AIPing Dify plugin.
-  zh_Hans: 官方 AIPing Dify 插件。
+  en_US: AIPing provides access to various models (LLMs, text embedding, reranking), configurable via model name, API key, and other parameters.
+  zh_Hans: AIPing 提供对多种模型（大语言模型、文本嵌入、重排序等）的访问，可通过模型名称、API 密钥及其他参数进行配置。
 icon_large:
   en_US: icon.svg
 icon_small:
@@ -51,11 +51,11 @@ help:
     en_US: Get your API Key from AIPing
     zh_Hans: 从 AIPing 获取 API Key
   url:
-    en_US: https://aiping.cn/docs/api-docs
+    en_US: https://aiping.cn/user/apikey
 extra:
   python:
     model_sources:
     - models/llm/llm.py
     - models/embedding/embedding.py
     - models/reranker/reranker.py
-    provider_source: provider/aiping.py
+    provider_source: provider/aiping_ai.py

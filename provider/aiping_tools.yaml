@@ -1,0 +1,41 @@
+credentials_for_provider:
+  endpoint_url:
+    label:
+      en_US: Custom API endpoint URL
+      zh_CN: Custom API endpoint URL
+    placeholder:
+      en_US: Base URL, e.g. https://aiping.cn/api/v1
+      zh_CN: Base URL, e.g. https://aiping.cn/api/v1
+    required: false
+    type: text-input
+  api_key:
+    help:
+      en_US: Get your API key from AIPing platform. You need to create an account and enable the Visual Services.
+      zh_CN: 从平台获取您的 API Key。您需要创建账户并开通智能视觉服务。
+    label:
+      en_US: AIPing API Key
+      zh_CN: AIPing API Key
+    placeholder:
+      en_US: Please input your AIPing API Key
+      zh_CN: 请输入您的 AIPing API Key
+    required: true
+    type: secret-input
+    url: https://aiping.cn/user/apikey
+extra:
+  python:
+    source: provider/aiping_tools.py
+identity:
+  author: aiping
+  description:
+    en_US: API integration for AI image generation by AIPing.
+    zh_CN: AIPing 提供的 API，用于 AI 图像生成。
+  icon: icon.svg
+  label:
+    en_US: AIPing
+    zh_CN: AIPing
+  name: aiping
+  tags:
+  - image
+tools:
+- tools/text2image.yaml
+- tools/image2image.yaml

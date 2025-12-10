@@ -1,0 +1,93 @@
+description:
+  human:
+    en_US: Generate images with AIPing AI.
+    zh_CN: 使用AIPing AI 生成图像。
+  llm: This tool is used to generate images from text prompts using AIPing AI, powered by Volcengine/ByteDance.
+extra:
+  python:
+    source: tools/text2image.py
+identity:
+  author: AIping Writer
+  icon: icon.svg
+  label:
+    en_US: Text to Image
+    zh_CN: 文生图
+  name: text2image
+parameters:
+- form: llm
+  human_description:
+    en_US: The text prompt used to generate the image. AIPing will generate an image based on this prompt.
+    zh_CN: 用于生成图像的文本提示。AIPing将根据此提示生成图像。
+  label:
+    en_US: Prompt
+    zh_CN: 提示词
+  llm_description: This prompt text will be used to generate image.
+  name: prompt
+  required: true
+  type: string
+- form: llm
+  human_description:
+    en_US: The text negative prompt used to generate the image. This prompt text will be used to generate image.
+    zh_CN: 用于生成图像的负向文本提示。AIPing将根据此提示生成图像。
+  label:
+    en_US: Negative Prompt
+    zh_CN: 负向提示词
+  llm_description: This prompt text will be used to generate image.
+  name: negative_prompt
+  required: false
+  type: string
+- form: form
+  human_description:
+    en_US: Model version to use for image generation (for details, please go to： https://aiping.cn/docs/product).
+    zh_CN: 用于图像生成的模型版本 (详情请前往：https://aiping.cn/docs/product)。
+  label:
+    en_US: Model Version
+    zh_CN: 模型版本
+  name: model
+  options:
+  - label:
+      en_US: Qwen-Image
+      zh_CN: Qwen-Image
+    value: "Qwen-Image"
+  - label:
+      en_US: HunyuanImage-3.0
+      zh_CN: HunyuanImage-3.0
+    value: "HunyuanImage-3.0"
+  - label:
+      en_US: 即梦文生图 3.0
+      zh_CN: 即梦文生图 3.0
+    value: "即梦文生图 3.0"
+  - label:
+      en_US: 即梦文生图 3.1
+      zh_CN: 即梦文生图 3.1
+    value: "即梦文生图 3.1"
+  - label:
+      en_US: Doubao-Seedream-4.0
+      zh_CN: Doubao-Seedream-4.0
+    value: "Doubao-Seedream-4.0"
+  - label:
+      en_US: Kolors
+      zh_CN: Kolors
+    value: "Kolors"
+  - label:
+      en_US: Qwen-Image-Plus
+      zh_CN: Qwen-Image-Plus
+    value: "Qwen-Image-Plus"
+  - label:
+      en_US: Wan2.5-T2I-Preview
+      zh_CN: Wan2.5-T2I-Preview
+    value: "Wan2.5-T2I-Preview"
+  required: true
+  type: select
+  default: "Qwen-Image"
+- form: schema
+  human_description:
+    en_US: Advanced parameters for image generation (for details, please go to： https://aiping.cn/docs/product).
+    zh_CN: 高级参数，用于图像生成 (详情请前往：https://aiping.cn/docs/product)。
+  label:
+    en_US: Extra Body
+    zh_CN: Extra Body
+  name: extra_body
+  required: false
+  type: string
+  default: "{}"

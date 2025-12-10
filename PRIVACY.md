@@ -1,5 +1,3 @@
 ## Privacy
 
-!!! Please fill in the privacy policy of the plugin.
-
-This plugin does not collect or use users' personal data.
+Using this plugin or AI Ping API  means you agree with [AI Ping privacy policy](https://aiping.cn/docs/statement)

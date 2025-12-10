@@ -1,17 +1,13 @@
-version: 0.0.1
+version: 0.0.3
 type: plugin
 author: aiping
 name: aiping
 label:
   en_US: AIPing
-  ja_JP: AIPing
   zh_Hans: AIPing
-  pt_BR: AIPing
 description:
-  en_US: AIPing official plugin
-  ja_JP: AIPing official plugin
-  zh_Hans: AIPing official plugin
-  pt_BR: AIPing official plugin
+  en_US: AIPing provides access to various models (LLMs, text embedding, reranking, image generation), configurable via model name, API key, and other parameters.
+  zh_Hans: AIPing 提供对多种模型（大语言模型、文本嵌入、重排序、图片生成等）的访问，可通过模型名称、API 密钥及其他参数进行配置。
 icon: icon.svg
 icon_dark: icon-dark.svg
 resource:
@@ -36,9 +32,11 @@ resource:
       size: 1048576
 plugins:
   models:
-    - provider/aiping.yaml
+    - provider/aiping_ai.yaml
+  tools:
+    - provider/aiping_tools.yaml
 meta:
-  version: 0.0.1
+  version: 0.0.3
   arch:
     - amd64
     - arm64

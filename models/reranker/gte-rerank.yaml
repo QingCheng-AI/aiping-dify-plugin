@@ -1,0 +1,7 @@
+model: gte-rerank
+label:
+  en_US: gte-rerank
+  zh_Hans: gte-rerank
+model_type: rerank
+model_properties:
+  context_size: 30720
