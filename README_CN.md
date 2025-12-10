@@ -9,7 +9,7 @@ AI Ping 提供统一的 API，让您通过单个端点访问数百个 AI 模型�
 
 1. 在 Dify 中选择 "Github" 安装方式
 2. 输入本仓库地址
-3. 将获得包含 AI 推理和生图等工具的完整功能包
+3. 将获得包含 AI 推理和生图等工具的完整功能包和单个插件安装包
 
 ### 方式二：通过插件市场安装
 
@@ -28,7 +28,10 @@ AI Ping 提供统一的 API，让您通过单个端点访问数百个 AI 模型�
    - `aiping-dify-plugin-tools.difypkg`：仅工具功能包
 3. 根据需要安装对应的插件包
 
-#### 备注：V0.0.3版本开始区分完整包和单个安装包，V0.0.3之前只有 model 类插件包 aiping-dify-plugin.difypkg
+#### 备注
+1. V0.0.3 版本开始区分完整功能包和单独功能包。在此之前，只有模型类插件包：aiping-dify-plugin.difypkg
+2. 完整功能包仅支持在本地部署的 Dify 中通过 GitHub 方式安装，且必须单独安装，不可与其他 AIPing 插件包同时安装
+3. 单独功能包支持同时安装多个，例如可以同时安装 aiping-dify-plugin-ai.difypkg 和 aiping-dify-plugin-tools.difypkg
 
 ## 配置
 

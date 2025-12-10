@@ -31,7 +31,10 @@ This Dify plugin provides access to various models (Large Language Models, text 
    - `aiping-dify-plugin-tools.difypkg`: Tools-only package
 3. Install the corresponding package based on your needs
 
-#### Note: Starting from version V0.0.3, packages are separated into full and individual packages. Before V0.0.3, only the model plugin package aiping-dify-plugin.difypkg was available.
+#### Note
+1. Starting from version V0.0.3, packages are differentiated into complete feature packages and individual function packages. Before V0.0.3, only the model plugin package aiping-dify-plugin.difypkg was available.
+2. The complete feature package is only supported for installation via GitHub method on locally deployed Dify and must be installed individually, not alongside other AIPing plugin packages.
+3. Individual function packages support simultaneous installation, such as installing both aiping-dify-plugin-ai.difypkg and aiping-dify-plugin-tools.difypkg together.
 
 ## Configuration
 

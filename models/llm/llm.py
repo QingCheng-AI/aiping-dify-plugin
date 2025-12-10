@@ -8,8 +8,6 @@ from dify_plugin import OAICompatLargeLanguageModel
 
 
 class AipingLargeLanguageModel(OAICompatLargeLanguageModel):
-    pass
-
     def _invoke(
         self,
         model: str,
