@@ -8,11 +8,11 @@ This Dify plugin provides access to various models (Large Language Models, text 
 
 ## Installation
 
-### Method 1: Install via Repository (Recommended - Full Features)
+### Method 1: Install via Repository (Recommended)
 
 1. Select "Github" installation method in Dify
 2. Enter the repository URL
-3. You'll get the complete feature package including AI inference and image generation tools
+3. You'll get two separate plugin packages - Model Plugin and Tool Plugin
 
 ### Method 2: Install via Marketplace
 
@@ -26,15 +26,14 @@ This Dify plugin provides access to various models (Large Language Models, text 
 
 1. Select "Local Package File" installation method in Dify
 2. Download the plugin package from the Release page:
-   - `aiping-dify-plugin-full.difypkg`: Complete feature package
-   - `aiping-dify-plugin-ai.difypkg`: Models-only package
-   - `aiping-dify-plugin-tools.difypkg`: Tools-only package
+   - `aiping-dify-plugin-ai.difypkg`: Models package
+   - `aiping-dify-plugin-tools.difypkg`: Tools package
 3. Install the corresponding package based on your needs
 
 #### Note
-1. Starting from version V0.0.3, packages are differentiated into complete feature packages and individual function packages. Before V0.0.3, only the model plugin package aiping-dify-plugin.difypkg was available.
-2. The complete feature package is only supported for installation via GitHub method on locally deployed Dify and must be installed individually, not alongside other AIPing plugin packages.
-3. Individual function packages support simultaneous installation, such as installing both aiping-dify-plugin-ai.difypkg and aiping-dify-plugin-tools.difypkg together.
+
+- You can install both Model Plugin and Tool Plugin simultaneously
+- Each plugin requires separate API key configuration
 
 ## Configuration
 

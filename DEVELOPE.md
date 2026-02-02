@@ -30,26 +30,17 @@ mv dify-plugin-linux-amd64 dify
 
 ## 插件打包方式
 
-本项目支持三种不同的打包方式，根据需要选择合适的方案：
+本项目支持两种独立的插件包：模型包和工具包。
 
-### 1.更新版本号
+### 1. 更新版本号
+
 更新插件前，需要先更新插件的版本号。
 
 ![](./_assets/update_version.png)
 
-### 2. 插件包
-#### 2.1. 完整插件包
+### 2. 打包模型插件包
 
-包含所有功能（模型 + 工具）的完整版本，适用于需要完整功能的场景。
-
-```bash
-./dify plugin package ./aiping-dify-plugin/
-mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-full.difypkg
-```
-
-#### 2.2. 仅包含模型的插件包
-
-只包含 AI 模型功能，适用于只需要模型能力的轻量级场景。
+只包含 AI 模型功能（LLM、文本嵌入、重排序等）。
 
 **配置说明：**
 
@@ -57,14 +48,15 @@ mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-full.difypkg
 
 ![](./_assets/package_models.png)
 
+**打包命令：**
 ```bash
 ./dify plugin package ./aiping-dify-plugin/
 mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-ai.difypkg
 ```
 
-#### 2.3. 仅包含工具的插件包
+### 3. 打包工具插件包
 
-只包含工具功能，适用于只需要工具能力的场景。
+只包含工具功能（文生图等）。
 
 **配置说明：**
 
@@ -72,6 +64,7 @@ mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-ai.difypkg
 
 ![](./_assets/package_tools.png)
 
+**打包命令：**
 ```bash
 ./dify plugin package ./aiping-dify-plugin/
 mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-tools.difypkg
@@ -81,5 +74,5 @@ mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-tools.difypkg
 
 - 每次打包前请确保插件代码已更新至最新版本
 - 生成的 `.difypkg` 文件即为可分发的插件包
-- 根据实际需求选择合适的打包方式
+- 模型包和工具包可以同时安装使用
 - 建议在打包前测试插件功能是否正常
