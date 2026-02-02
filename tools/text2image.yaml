@@ -80,7 +80,7 @@ parameters:
   required: true
   type: select
   default: "Qwen-Image"
-- form: schema
+- form: form
   human_description:
     en_US: Advanced parameters for image generation (for details, please go to： https://aiping.cn/docs/product).
     zh_CN: 高级参数，用于图像生成 (详情请前往：https://aiping.cn/docs/product)。

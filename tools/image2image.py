@@ -67,7 +67,7 @@ class Image2ImageTool(Tool):
                 file_url = image_file.url
                 yield self.create_text_message(f"正在从URL获取图片: {file_url[:30]}...")
                 try:
-                    response = requests.get(file_url, timeout=60)
+                    response = requests.get(file_url, timeout=config.MAX_REQUEST_TIMEOUT)
                     response.raise_for_status()
                     file_content = response.content
                     yield self.create_text_message(f"成功下载图片: 大小={len(file_content)/1024:.2f}KB")
@@ -217,7 +217,7 @@ class Image2ImageTool(Tool):
         parsed = urlparse(image_input)
         if parsed.scheme in ("http", "https"):
             try:
-                response = requests.get(image_input, timeout=30)
+                response = requests.get(image_input, timeout=config.MAX_REQUEST_TIMEOUT)
                 response.raise_for_status()
 
                 # Try to get MIME type from Content-Type header

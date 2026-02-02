@@ -118,7 +118,7 @@ class Text2ImageTool(Tool):
         parsed = urlparse(image_input)
         if parsed.scheme in ("http", "https"):
             try:
-                response = requests.get(image_input, timeout=30)
+                response = requests.get(image_input, timeout=config.MAX_REQUEST_TIMEOUT)
                 response.raise_for_status()
 
                 # Try to get MIME type from Content-Type header
