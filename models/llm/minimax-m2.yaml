@@ -1,12 +1,12 @@
 model: MiniMax-M2
 label:
-  zh_Hans: MiniMax-M2
   en_US: MiniMax-M2
+  zh_Hans: MiniMax-M2
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 204800

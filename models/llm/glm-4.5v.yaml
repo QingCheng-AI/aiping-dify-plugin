@@ -1,16 +1,16 @@
 model: GLM-4.5V
 label:
-  zh_Hans: GLM-4.5V
   en_US: GLM-4.5V
+  zh_Hans: GLM-4.5V
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
-- vision
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
+  - vision
 model_properties:
   mode: chat
-  context_size: 654336
+  context_size: 131072
 parameter_rules:
 - name: max_tokens
   use_template: max_tokens

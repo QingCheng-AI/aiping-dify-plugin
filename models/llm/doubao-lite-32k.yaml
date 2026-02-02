@@ -1,16 +1,15 @@
-model: DeepSeek-Math-V2
+model: Doubao-lite-32k
 label:
-  zh_Hans: DeepSeek-Math-V2
-  en_US: DeepSeek-Math-V2
+  en_US: Doubao-lite-32k
+  zh_Hans: Doubao-lite-32k
 model_type: llm
 features:
-- agent-thought
-- tool-call
-- multi-tool-call
-- stream-tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
-  context_size: 163840
+  context_size: 32768
 parameter_rules:
 - name: max_tokens
   use_template: max_tokens

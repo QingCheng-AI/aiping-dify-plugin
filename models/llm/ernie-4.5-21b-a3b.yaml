@@ -1,12 +1,12 @@
 model: ERNIE-4.5-21B-A3B
 label:
-  zh_Hans: ERNIE-4.5-21B-A3B
   en_US: ERNIE-4.5-21B-A3B
+  zh_Hans: ERNIE-4.5-21B-A3B
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 131072

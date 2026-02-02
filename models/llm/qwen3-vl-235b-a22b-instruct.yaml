@@ -1,14 +1,13 @@
 model: Qwen3-VL-235B-A22B-Instruct
 label:
-  zh_Hans: Qwen3-VL-235B-A22B-Instruct
   en_US: Qwen3-VL-235B-A22B-Instruct
+  zh_Hans: Qwen3-VL-235B-A22B-Instruct
 model_type: llm
 features:
-- agent-thought
-- tool-call
-- multi-tool-call
-- stream-tool-call
-- vision
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
+  - vision
 model_properties:
   mode: chat
   context_size: 262144

@@ -1,12 +1,12 @@
 model: GLM-4.5-Air
 label:
-  zh_Hans: GLM-4.5-Air
   en_US: GLM-4.5-Air
+  zh_Hans: GLM-4.5-Air
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 131072

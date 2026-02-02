@@ -1,12 +1,12 @@
 model: MiniMax-M1-80k
 label:
-  zh_Hans: MiniMax-M1-80k
   en_US: MiniMax-M1-80k
+  zh_Hans: MiniMax-M1-80k
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 1024000

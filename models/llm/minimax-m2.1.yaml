@@ -1,7 +1,7 @@
-model: DeepSeek-R1-Distill-Qwen-14B
+model: MiniMax-M2.1
 label:
-  en_US: DeepSeek-R1-Distill-Qwen-14B
-  zh_Hans: DeepSeek-R1-Distill-Qwen-14B
+  en_US: MiniMax-M2.1
+  zh_Hans: MiniMax-M2.1
 model_type: llm
 features:
   - multi-tool-call
@@ -9,7 +9,7 @@ features:
   - tool-call
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 204800
 parameter_rules:
 - name: max_tokens
   use_template: max_tokens

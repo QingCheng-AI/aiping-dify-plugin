@@ -1,12 +1,12 @@
 model: Ling-1T
 label:
-  zh_Hans: Ling-1T
   en_US: Ling-1T
+  zh_Hans: Ling-1T
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 131072

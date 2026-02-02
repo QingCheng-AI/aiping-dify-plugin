@@ -1,12 +1,12 @@
 model: Qwen2.5-Coder-32B-Instruct
 label:
-  zh_Hans: Qwen2.5-Coder-32B-Instruct
   en_US: Qwen2.5-Coder-32B-Instruct
+  zh_Hans: Qwen2.5-Coder-32B-Instruct
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 131072

@@ -1,13 +1,12 @@
 model: Qwen3-Next-80B-A3B-Thinking
 label:
-  zh_Hans: Qwen3-Next-80B-A3B-Thinking
   en_US: Qwen3-Next-80B-A3B-Thinking
+  zh_Hans: Qwen3-Next-80B-A3B-Thinking
 model_type: llm
 features:
-- agent-thought
-- tool-call
-- multi-tool-call
-- stream-tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 262144

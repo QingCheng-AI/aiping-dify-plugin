@@ -1,13 +1,12 @@
 model: Qwen-Max
 label:
-  zh_Hans: Qwen-Max
   en_US: Qwen-Max
+  zh_Hans: Qwen-Max
 model_type: llm
 features:
-- agent-thought
-- tool-call
-- multi-tool-call
-- stream-tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 32768

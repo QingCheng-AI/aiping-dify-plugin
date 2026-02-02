@@ -1,13 +1,13 @@
 model: DeepSeek-OCR
 label:
-  zh_Hans: DeepSeek-OCR
   en_US: DeepSeek-OCR
+  zh_Hans: DeepSeek-OCR
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
-- vision
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
+  - vision
 model_properties:
   mode: chat
   context_size: 8192

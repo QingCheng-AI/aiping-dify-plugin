@@ -1,12 +1,12 @@
 model: Kimi-K2-0905
 label:
-  zh_Hans: Kimi-K2-0905
   en_US: Kimi-K2-0905
+  zh_Hans: Kimi-K2-0905
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 262144

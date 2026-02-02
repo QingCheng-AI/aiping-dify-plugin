@@ -1,12 +1,12 @@
 model: Qwen3-30B-A3B
 label:
-  zh_Hans: Qwen3-30B-A3B
   en_US: Qwen3-30B-A3B
+  zh_Hans: Qwen3-30B-A3B
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 131072

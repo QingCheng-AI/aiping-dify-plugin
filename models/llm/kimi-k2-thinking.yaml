@@ -1,16 +1,15 @@
 model: Kimi-K2-Thinking
 label:
-  zh_Hans: Kimi-K2-Thinking
   en_US: Kimi-K2-Thinking
+  zh_Hans: Kimi-K2-Thinking
 model_type: llm
 features:
-- agent-thought
-- tool-call
-- multi-tool-call
-- stream-tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
-  context_size: 268288
+  context_size: 262144
 parameter_rules:
 - name: max_tokens
   use_template: max_tokens

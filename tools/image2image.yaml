@@ -2,7 +2,7 @@ description:
   human:
     en_US: Generate images from images with AIPing AI.
     zh_CN: 使用AIPing AI 进行图生图。
-  llm: This tool is used to generate images from images and text prompts using AIPing AI, powered by Volcengine/ByteDance.
+  llm: This tool is used to generate images from images and text prompts using AIPing AI.
 extra:
   python:
     source: tools/image2image.py
@@ -16,8 +16,8 @@ identity:
 parameters:
 - form: llm
   human_description:
-    en_US: The text prompt used to generate the image. AIPing will generate an image based on this prompt.
-    zh_CN: 用于生成图像的文本提示。AIPing将根据此提示生成图像。
+    en_US: The text prompt used to generate the image.
+    zh_CN: 用于生成图像的文本提示。
   label:
     en_US: Prompt
     zh_CN: 提示词
@@ -38,8 +38,8 @@ parameters:
   type: file
 - form: llm
   human_description:
-    en_US: The text negative prompt used to generate the image. This prompt text will be used to generate image.
-    zh_CN: 用于生成图像的负向文本提示。AIPing将根据此提示生成图像。
+    en_US: The text negative prompt used to generate the image.
+    zh_CN: 用于生成图像的负向文本提示。
   label:
     en_US: Negative Prompt
     zh_CN: 负向提示词
@@ -49,17 +49,41 @@ parameters:
   type: string
 - form: form
   human_description:
-    en_US: Model version to use for image generation (for details, please go to： https://aiping.cn/docs/product).
-    zh_CN: 用于图像生成的模型版本 (详情请前往：https://aiping.cn/docs/product)。
+    en_US: Model to use for image generation (for details, please go to： https://aiping.cn/docs/product).
+    zh_CN: 用于图像生成的模型 (详情请前往：https://aiping.cn/docs/product)。
   label:
-    en_US: Model Version
-    zh_CN: 模型版本
+    en_US: Model
+    zh_CN: 模型
   name: model
   options:
   - label:
       en_US: Doubao-Seedream-4.0
       zh_CN: Doubao-Seedream-4.0
     value: "Doubao-Seedream-4.0"
+  - label:
+      en_US: Doubao-Seedream-4.5
+      zh_CN: Doubao-Seedream-4.5
+    value: "Doubao-Seedream-4.5"
+  - label:
+      en_US: Kling-V1
+      zh_CN: Kling-V1
+    value: "Kling-V1"
+  - label:
+      en_US: Kling-V1.5
+      zh_CN: Kling-V1.5
+    value: "Kling-V1.5"
+  - label:
+      en_US: Kling-V2
+      zh_CN: Kling-V2
+    value: "Kling-V2"
+  - label:
+      en_US: Kling-V2-New
+      zh_CN: Kling-V2-New
+    value: "Kling-V2-New"
+  - label:
+      en_US: Kling-V2.1
+      zh_CN: Kling-V2.1
+    value: "Kling-V2.1"
   - label:
       en_US: Qwen-Image-Edit
       zh_CN: Qwen-Image-Edit
@@ -72,6 +96,10 @@ parameters:
       en_US: Wan2.5-I2I-Preview
       zh_CN: Wan2.5-I2I-Preview
     value: "Wan2.5-I2I-Preview"
+  - label:
+      en_US: 即梦图片生成 4.0
+      zh_CN: 即梦图片生成 4.0
+    value: "即梦图片生成 4.0"
   required: true
   type: select
   default: "Qwen-Image-Edit"

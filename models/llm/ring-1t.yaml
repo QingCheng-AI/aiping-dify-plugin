@@ -1,12 +1,12 @@
 model: Ring-1T
 label:
-  zh_Hans: Ring-1T
   en_US: Ring-1T
+  zh_Hans: Ring-1T
 model_type: llm
 features:
-- multi-tool-call
-- stream-tool-call
-- tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
   context_size: 131072
