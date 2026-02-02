@@ -32,7 +32,13 @@ mv dify-plugin-linux-amd64 dify
 
 本项目支持三种不同的打包方式，根据需要选择合适的方案：
 
-### 1. 完整插件包
+### 1.更新版本号
+更新插件前，需要先更新插件的版本号。
+
+![](./_assets/update_version.png)
+
+### 2. 插件包
+#### 2.1. 完整插件包
 
 包含所有功能（模型 + 工具）的完整版本，适用于需要完整功能的场景。
 
@@ -41,7 +47,7 @@ mv dify-plugin-linux-amd64 dify
 mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-full.difypkg
 ```
 
-### 2. 仅包含模型的插件包
+#### 2.2. 仅包含模型的插件包
 
 只包含 AI 模型功能，适用于只需要模型能力的轻量级场景。
 
@@ -56,7 +62,7 @@ mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-full.difypkg
 mv ./aiping-dify-plugin.difypkg aiping-dify-plugin-ai.difypkg
 ```
 
-### 3. 仅包含工具的插件包
+#### 2.3. 仅包含工具的插件包
 
 只包含工具功能，适用于只需要工具能力的场景。
 
