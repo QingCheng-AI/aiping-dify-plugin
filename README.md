@@ -1,5 +1,3 @@
-[中文文档](README_CN.md)
-
 ## Overview
 
 AI Ping provides a unified API that gives you access to hundreds of AI models through a single endpoint, while automatically handling fallbacks and selecting the most cost-effective options. Get started with just a few lines of code using your preferred SDK or framework.
