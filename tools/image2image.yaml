@@ -65,6 +65,10 @@ parameters:
       zh_CN: Doubao-Seedream-4.5
     value: "Doubao-Seedream-4.5"
   - label:
+      en_US: Doubao-Seedream-5.0-lite
+      zh_CN: Doubao-Seedream-5.0-lite
+    value: "Doubao-Seedream-5.0-lite"
+  - label:
       en_US: Kling-V1
       zh_CN: Kling-V1
     value: "Kling-V1"

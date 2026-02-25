@@ -427,6 +427,9 @@ parameter_rules:
 - name: max_tokens
   use_template: max_tokens
   type: int
+  min: 1
+  max: 8192
+  default: 2048
 - name: temperature
   use_template: temperature
   type: float
