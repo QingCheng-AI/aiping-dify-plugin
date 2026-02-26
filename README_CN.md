@@ -54,4 +54,4 @@ AI Ping 提供统一的 API，让您通过单个端点访问数百个 AI 模型�
 ## 相关链接
 
 - [官方网站](https://aiping.cn/)
-- [AI Ping 快速开始](https://aiping.cn/docs/quickstart)
+- [AI Ping 产品文档](https://aiping.cn/docs/PlatformOverview/product)

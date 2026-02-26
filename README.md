@@ -54,4 +54,4 @@ Configure your API key in the **Tools** tab:
 ## Related Links
 
 - [Website](https://aiping.cn/)
-- [AI Ping Quick Start](https://aiping.cn/docs/quickstart)
+- [AI Ping Product Document](https://aiping.cn/docs/PlatformOverview/product)
