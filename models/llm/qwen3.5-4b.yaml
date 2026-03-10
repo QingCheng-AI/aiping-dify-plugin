@@ -1,7 +1,7 @@
-model: Ring-1T
+model: Qwen3.5-4B
 label:
-  en_US: Ring-1T
-  zh_Hans: Ring-1T
+  en_US: Qwen3.5-4B
+  zh_Hans: Qwen3.5-4B
 model_type: llm
 features:
   - multi-tool-call
@@ -9,7 +9,7 @@ features:
   - tool-call
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 262144
 parameter_rules:
 - name: max_tokens
   type: int

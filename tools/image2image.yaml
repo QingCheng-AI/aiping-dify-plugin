@@ -89,6 +89,14 @@ parameters:
       zh_CN: Kling-V2.1
     value: "Kling-V2.1"
   - label:
+      en_US: Qwen-Image-2.0
+      zh_CN: Qwen-Image-2.0
+    value: "Qwen-Image-2.0"
+  - label:
+      en_US: Qwen-Image-2.0-Pro
+      zh_CN: Qwen-Image-2.0-Pro
+    value: "Qwen-Image-2.0-Pro"
+  - label:
       en_US: Qwen-Image-Edit
       zh_CN: Qwen-Image-Edit
     value: "Qwen-Image-Edit"
