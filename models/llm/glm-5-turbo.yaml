@@ -1,7 +1,7 @@
-model: GLM-Z1-9B-0414
+model: GLM-5-Turbo
 label:
-  en_US: GLM-Z1-9B-0414
-  zh_Hans: GLM-Z1-9B-0414
+  en_US: GLM-5-Turbo
+  zh_Hans: GLM-5-Turbo
 model_type: llm
 features:
   - multi-tool-call
@@ -9,7 +9,7 @@ features:
   - tool-call
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 204800
 parameter_rules:
 - name: max_tokens
   type: int

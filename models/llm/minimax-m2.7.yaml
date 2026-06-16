@@ -1,7 +1,7 @@
-model: Qwen2.5-14B-Instruct
+model: MiniMax-M2.7
 label:
-  en_US: Qwen2.5-14B-Instruct
-  zh_Hans: Qwen2.5-14B-Instruct
+  en_US: MiniMax-M2.7
+  zh_Hans: MiniMax-M2.7
 model_type: llm
 features:
   - multi-tool-call
@@ -9,7 +9,7 @@ features:
   - tool-call
 model_properties:
   mode: chat
-  context_size: 32768
+  context_size: 204800
 parameter_rules:
 - name: max_tokens
   type: int

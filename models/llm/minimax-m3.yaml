@@ -1,7 +1,7 @@
-model: Performance
+model: MiniMax-M3
 label:
-  en_US: Performance
-  zh_Hans: Performance
+  en_US: MiniMax-M3
+  zh_Hans: MiniMax-M3
 model_type: llm
 features:
   - multi-tool-call
@@ -9,7 +9,7 @@ features:
   - tool-call
 model_properties:
   mode: chat
-  context_size: 2048000
+  context_size: 1024000
 parameter_rules:
 - name: max_tokens
   type: int

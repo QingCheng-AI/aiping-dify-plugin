@@ -46,29 +46,33 @@ parameters:
   name: model
   options:
   - label:
+      en_US: Qwen-Image
+      zh_CN: Qwen-Image
+    value: "Qwen-Image"
+  - label:
+      en_US: Kolors
+      zh_CN: Kolors
+    value: "Kolors"
+  - label:
+      en_US: Wan2.5-T2I-Preview
+      zh_CN: Wan2.5-T2I-Preview
+    value: "Wan2.5-T2I-Preview"
+  - label:
+      en_US: 即梦文生图 3.0
+      zh_CN: 即梦文生图 3.0
+    value: "即梦文生图 3.0"
+  - label:
+      en_US: 即梦文生图 3.1
+      zh_CN: 即梦文生图 3.1
+    value: "即梦文生图 3.1"
+  - label:
       en_US: Doubao-Seedream-4.0
       zh_CN: Doubao-Seedream-4.0
     value: "Doubao-Seedream-4.0"
   - label:
-      en_US: Doubao-Seedream-4.5
-      zh_CN: Doubao-Seedream-4.5
-    value: "Doubao-Seedream-4.5"
-  - label:
-      en_US: Doubao-Seedream-5.0-lite
-      zh_CN: Doubao-Seedream-5.0-lite
-    value: "Doubao-Seedream-5.0-lite"
-  - label:
-      en_US: GLM-Image
-      zh_CN: GLM-Image
-    value: "GLM-Image"
-  - label:
-      en_US: HunyuanImage-3.0
-      zh_CN: HunyuanImage-3.0
-    value: "HunyuanImage-3.0"
-  - label:
-      en_US: Kling-V1
-      zh_CN: Kling-V1
-    value: "Kling-V1"
+      en_US: 即梦图片生成 4.0
+      zh_CN: 即梦图片生成 4.0
+    value: "即梦图片生成 4.0"
   - label:
       en_US: Kling-V1.5
       zh_CN: Kling-V1.5
@@ -82,13 +86,29 @@ parameters:
       zh_CN: Kling-V2.1
     value: "Kling-V2.1"
   - label:
-      en_US: Kolors
-      zh_CN: Kolors
-    value: "Kolors"
+      en_US: Qwen-Image-Plus
+      zh_CN: Qwen-Image-Plus
+    value: "Qwen-Image-Plus"
   - label:
-      en_US: Qwen-Image
-      zh_CN: Qwen-Image
-    value: "Qwen-Image"
+      en_US: HunyuanImage-3.0
+      zh_CN: HunyuanImage-3.0
+    value: "HunyuanImage-3.0"
+  - label:
+      en_US: Kling-V1
+      zh_CN: Kling-V1
+    value: "Kling-V1"
+  - label:
+      en_US: Doubao-Seedream-4.5
+      zh_CN: Doubao-Seedream-4.5
+    value: "Doubao-Seedream-4.5"
+  - label:
+      en_US: GLM-Image
+      zh_CN: GLM-Image
+    value: "GLM-Image"
+  - label:
+      en_US: Doubao-Seedream-5.0-lite
+      zh_CN: Doubao-Seedream-5.0-lite
+    value: "Doubao-Seedream-5.0-lite"
   - label:
       en_US: Qwen-Image-2.0
       zh_CN: Qwen-Image-2.0
@@ -97,26 +117,6 @@ parameters:
       en_US: Qwen-Image-2.0-Pro
       zh_CN: Qwen-Image-2.0-Pro
     value: "Qwen-Image-2.0-Pro"
-  - label:
-      en_US: Qwen-Image-Plus
-      zh_CN: Qwen-Image-Plus
-    value: "Qwen-Image-Plus"
-  - label:
-      en_US: Wan2.5-T2I-Preview
-      zh_CN: Wan2.5-T2I-Preview
-    value: "Wan2.5-T2I-Preview"
-  - label:
-      en_US: 即梦图片生成 4.0
-      zh_CN: 即梦图片生成 4.0
-    value: "即梦图片生成 4.0"
-  - label:
-      en_US: 即梦文生图 3.0
-      zh_CN: 即梦文生图 3.0
-    value: "即梦文生图 3.0"
-  - label:
-      en_US: 即梦文生图 3.1
-      zh_CN: 即梦文生图 3.1
-    value: "即梦文生图 3.1"
   required: true
   type: select
   default: "Qwen-Image"

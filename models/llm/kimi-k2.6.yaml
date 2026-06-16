@@ -1,7 +1,7 @@
-model: Doubao-lite-32k
+model: Kimi-K2.6
 label:
-  en_US: Doubao-lite-32k
-  zh_Hans: Doubao-lite-32k
+  en_US: Kimi-K2.6
+  zh_Hans: Kimi-K2.6
 model_type: llm
 features:
   - multi-tool-call
@@ -9,7 +9,7 @@ features:
   - tool-call
 model_properties:
   mode: chat
-  context_size: 32768
+  context_size: 262144
 parameter_rules:
 - name: max_tokens
   type: int

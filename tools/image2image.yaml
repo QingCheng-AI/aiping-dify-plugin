@@ -57,21 +57,21 @@ parameters:
   name: model
   options:
   - label:
+      en_US: Wan2.5-I2I-Preview
+      zh_CN: Wan2.5-I2I-Preview
+    value: "Wan2.5-I2I-Preview"
+  - label:
       en_US: Doubao-Seedream-4.0
       zh_CN: Doubao-Seedream-4.0
     value: "Doubao-Seedream-4.0"
   - label:
-      en_US: Doubao-Seedream-4.5
-      zh_CN: Doubao-Seedream-4.5
-    value: "Doubao-Seedream-4.5"
+      en_US: Qwen-Image-Edit
+      zh_CN: Qwen-Image-Edit
+    value: "Qwen-Image-Edit"
   - label:
-      en_US: Doubao-Seedream-5.0-lite
-      zh_CN: Doubao-Seedream-5.0-lite
-    value: "Doubao-Seedream-5.0-lite"
-  - label:
-      en_US: Kling-V1
-      zh_CN: Kling-V1
-    value: "Kling-V1"
+      en_US: 即梦图片生成 4.0
+      zh_CN: 即梦图片生成 4.0
+    value: "即梦图片生成 4.0"
   - label:
       en_US: Kling-V1.5
       zh_CN: Kling-V1.5
@@ -81,13 +81,29 @@ parameters:
       zh_CN: Kling-V2
     value: "Kling-V2"
   - label:
+      en_US: Kling-V2.1
+      zh_CN: Kling-V2.1
+    value: "Kling-V2.1"
+  - label:
+      en_US: Qwen-Image-Edit-Plus
+      zh_CN: Qwen-Image-Edit-Plus
+    value: "Qwen-Image-Edit-Plus"
+  - label:
+      en_US: Kling-V1
+      zh_CN: Kling-V1
+    value: "Kling-V1"
+  - label:
       en_US: Kling-V2-New
       zh_CN: Kling-V2-New
     value: "Kling-V2-New"
   - label:
-      en_US: Kling-V2.1
-      zh_CN: Kling-V2.1
-    value: "Kling-V2.1"
+      en_US: Doubao-Seedream-4.5
+      zh_CN: Doubao-Seedream-4.5
+    value: "Doubao-Seedream-4.5"
+  - label:
+      en_US: Doubao-Seedream-5.0-lite
+      zh_CN: Doubao-Seedream-5.0-lite
+    value: "Doubao-Seedream-5.0-lite"
   - label:
       en_US: Qwen-Image-2.0
       zh_CN: Qwen-Image-2.0
@@ -96,22 +112,6 @@ parameters:
       en_US: Qwen-Image-2.0-Pro
       zh_CN: Qwen-Image-2.0-Pro
     value: "Qwen-Image-2.0-Pro"
-  - label:
-      en_US: Qwen-Image-Edit
-      zh_CN: Qwen-Image-Edit
-    value: "Qwen-Image-Edit"
-  - label:
-      en_US: Qwen-Image-Edit-Plus
-      zh_CN: Qwen-Image-Edit-Plus
-    value: "Qwen-Image-Edit-Plus"
-  - label:
-      en_US: Wan2.5-I2I-Preview
-      zh_CN: Wan2.5-I2I-Preview
-    value: "Wan2.5-I2I-Preview"
-  - label:
-      en_US: 即梦图片生成 4.0
-      zh_CN: 即梦图片生成 4.0
-    value: "即梦图片生成 4.0"
   required: true
   type: select
   default: "Qwen-Image-Edit"

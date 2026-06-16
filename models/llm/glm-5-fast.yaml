@@ -1,7 +1,7 @@
-model: ERNIE-4.5-300B-A47B
+model: GLM-5-fast
 label:
-  en_US: ERNIE-4.5-300B-A47B
-  zh_Hans: ERNIE-4.5-300B-A47B
+  en_US: GLM-5-fast
+  zh_Hans: GLM-5-fast
 model_type: llm
 features:
   - multi-tool-call
@@ -9,7 +9,7 @@ features:
   - tool-call
 model_properties:
   mode: chat
-  context_size: 32768
+  context_size: 204800
 parameter_rules:
 - name: max_tokens
   type: int
